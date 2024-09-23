@@ -5,10 +5,241 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart-Ticketing</title>
+
+    <!-- CSS linked -->
+    <link rel="stylesheet" href="Styles/style.css">
+    <!-- Tailwind & DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="min-h-screen">
+    <!-- Header Section -->
+    <header class="px-7 pt-5">
+        <!-- Nav Section -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost font-raleway font-extrabold text-4xl">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 gap-10 text-[#030712B3] font-raleway font-medium text-lg">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn bg-[#1DD10066] border-[#1DD100] font-raleway font-bold text-xl text-[#1DD100]">Bus <img
+                        src="images/bus-icon.png" alt="bus-icon.png"></a>
+            </div>
+        </div>
 
+        <!-- Banner Section -->
+        <Section class="text-center ">
+            <div
+                class="bg-[url(images/banner.png)] bg-no-repeat mx-auto items-center content-center bg-cover text-center  container lg:h-[720px] relative">
+
+
+                <h1 class="font-raleway font-extrabold text-white lg:text-6xl mb-12">End-to-End Travel with <br><span
+                        class="text-[#1DD100] mb-12">P Paribahan</span></h1>
+                <p class="font-inter text-white mb-12">Welcome to P-Ticket. Your one-stop solution for booking bus
+                    tickets effortlessly. Enjoy a smooth,
+                    secure, and
+                    hassle-free travel experience with just a few clicks!</p>
+                <button
+                    class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#1DD100] font-bold font-raleway text-xl border-none">Buy
+                    Tickets</button>
+
+                <!-- User, Sold, Partner -->
+                <div class="lg:flex absolute lg:-bottom-14 lg:right-36 lg:gap-12 ">
+                    <!-- user -->
+                    <div class="card bg-base-100 w-96 shadow-xl border-[#1DD100] border-b-2 ">
+                        <div class="card-body flex flex-row">
+                            <div>
+                                <img src="images/people.png" alt="" srcset="">
+                            </div>
+                            <div>
+                                <h2 class="card-title font-inter font-bold text-3xl">500K+</h2>
+                                <p class="text-[#03071299]">Registered users</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ticket -->
+                    <div class="card bg-base-100 w-96 shadow-xl border-[#1DD100] border-b-2 ">
+                        <div class="card-body flex flex-row">
+                            <div>
+                                <img src="images/ticket-cupon.png" alt="" srcset="">
+                            </div>
+                            <div>
+                                <h2 class="card-title font-inter font-bold text-3xl">1.7 lacks</h2>
+                                <p class="text-[#03071299]">Tickets sold</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Partner -->
+                    <div class="card bg-base-100 w-96 shadow-xl border-[#1DD100] border-b-2 ">
+                        <div class="card-body flex flex-row">
+                            <div>
+                                <img src="images/stoppage.png" alt="" srcset="">
+                            </div>
+                            <div>
+                                <h2 class="card-title font-inter font-bold text-3xl">80K+</h2>
+                                <p class="text-[#03071299]">Rental partners</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </Section>
+
+        <!-- Best offer Section -->
+        <section class="lg:mt-40 container mx-auto">
+            <h1 class="text-[#030712] font-raleway font-bold text-5xl text-center">Best offers for you</h1>
+            <div class="lg:flex justify-between my-12">
+                <!-- card 15% discount -->
+                <div class="card bg-base-100  shadow-xl bg-[#FFBF0F] h-48 w-2/5 flex flex-row ">
+                    <div class="card-body  font-inter">
+                        <h2 class="card-title font-extrabold text-[#030712CC] text-4xl">15% OFF</h2>
+                        <p class="font-semibold text-xl">on your next purchase</p>
+                        <p class="font-medium text-lg text-[#03071280]">use by January 2024</p>
+                    </div>
+                    <div class="h-48">
+                        <img class="h-full" src="images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="font-raleway card-body text-center my-auto">
+                        <h2 class="font-bold text-3xl">NEW15</h2>
+                        <p class="text-[#03071233] font-medium">Coupon Code</p>
+                    </div>
+                </div>
+                <!-- card 20% discount -->
+                <div
+                    class="card bg-base-100  shadow-xl bg-[#FFBF0F] h-48 w-2/5 flex flex-row items-center content-center">
+                    <div class="card-body  font-inter">
+                        <h2 class="card-title font-extrabold text-[#030712CC] text-4xl">20% OFF</h2>
+                        <p class="font-semibold text-xl">on your next purchase</p>
+                        <p class="font-medium text-lg text-[#03071280]">use by January 2024</p>
+                    </div>
+                    <div class="h-48">
+                        <img class="h-full" src="images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="font-raleway card-body text-center my-auto">
+                        <h2 class="font-bold text-3xl">Couple 20</h2>
+                        <p class="text-[#03071233] font-medium">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="items-center mx-auto flex mb-10"><a
+                        class="btn bg-[#ffffff] border-[#1DD100] font-raleway font-bold text-xl text-[#1DD100]">See All
+                        Offers</a></button>
+            </div>
+
+        </section>
+    </header>
+
+    <!-- Body Section -->
+
+    <main class="bg-[#F7F8F8] rounded-t-[90px] border-t-2 border-[#1DD100]">
+        <!-- P.H Paribahan Section -->
+        <section class="text-center">
+            <h1 class="text-black font-raleway font-bold text-5xl">P.H Paribahan</h1>
+            <p class="font-inter font-normal text-lg text-[#03071299] py-8">Yes, you can run unit tests and view the
+                results directly within the app. The integrated <br>testing features allow for a
+                streamlined .</p>
+        </section>
+
+        <!-- Greenline Paribahan Card -->
+        <section class="bg-white w-3/5 h-96 flex mx-auto items-center rounded-3xl my-7">
+            <!-- Left side of the card -->
+            <div class="p-5">
+                <div class="flex justify-between pb-7">
+                    <div><img class="max-h-12" src="images/bus-logo.png" alt=""></div>
+                    <div>
+                        <h1 class="font-raleway font-bold text-4xl">Greenline Paribahan</h1>
+                        <p class="font-inter font-normal text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+                    </div>
+                    <div>
+                        <button class="btn bg-[#1DD10026] text-[#1DD100] border-none"><img src="images/seat-green.png"
+                                alt="">40 Seats left</button>
+                    </div>
+                </div>
+
+                <div class="bg-[#F7F8F8] rounded-3xl p-5">
+                    <div class="flex justify-between font-raleway">
+                        <p class=" font-semibold text-[#03071299]">Route</p>
+                        <p class="font-semibold text-lg">Dhaka - Sylhet</p>
+                    </div>
+                    <p class="text-xl text-[#03071233]">
+                        ---------------------------------------------------------------------------</p>
+                    <div class="flex justify-between font-raleway">
+                        <p class="font-semibold text-[#03071299]">Departure Time</p>
+                        <p class="font-semibold text-lg">9:00 PM</p>
+                    </div>
+                    <p class="text-xl text-[#03071233]">
+                        ---------------------------------------------------------------------------</p>
+                    <div class="flex justify-between">
+                        <button class="btn bg-[#0307120D] text-[#030712CC]"><a href="">Boarding Point -
+                                Laxmipur</a></button>
+                        <button class="btn bg-[#0307120D] text-[#030712CC]"><a href="">Dropping Point -
+                                Bogura</a></button>
+                        <button class="btn bg-[#0307120D] text-[#030712CC]"><a href="">Est. Time - 11 Hour</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right side of the card -->
+            <div class="h-96">
+                <img class="h-full" src="images/info-devider.png" alt="">
+            </div>
+
+            <div class="font-raleway content-center flex flex-col mx-auto">
+                <img class="size-12" src="images/fare.png" alt="">
+                <h1 class="font-bold text-4xl">550 Taka</h1>
+                <p class="font-semibold text-2xl text-[#03071299]">Per Seat</p>
+            </div>
+
+        </section>
+
+        <!-- Select your seat -->
+        <div>
+            <h1 class="font-raleway font-semibold text-2xl">Select Your Seat</h1>
+            <p class="text-xl text-[#03071233]">
+                ---------------------------------------------------------------------------</p>
+            <div class="flex justify-between">
+                <p class="text-[#03071280]"><img src="images/seat-gray.png" alt=""> Available</p>
+                <p><img src="images/seat-green-filled.png" alt="">Selected</p>
+            </div>
+            <p class="text-xl text-[#03071233]">
+                ---------------------------------------------------------------------------</p>
+
+                
+
+        </div>
+
+    </main>
+    <!-- Footer Section -->
+    <footer>
+
+    </footer>
+
+    <script src="tailwind.config.js"></script>
 </body>
 
 </html>
