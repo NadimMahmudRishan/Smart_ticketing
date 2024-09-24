@@ -9,5 +9,8 @@
  }
 
 .dash-line{
-   border-bottom: 1px dashed #03071233;
+   border-bottom: 1px dashed #0307124D;
+}
+.dash-line-footer{
+   border-bottom: 2px dashed #83889769;
 }
