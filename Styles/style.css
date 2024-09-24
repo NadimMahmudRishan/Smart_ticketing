@@ -14,3 +14,7 @@
 .dash-line-footer{
    border-bottom: 2px dashed #83889769;
 }
+
+html{
+   scroll-behavior: smooth;
+}
