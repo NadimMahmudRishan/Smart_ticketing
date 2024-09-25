@@ -45,8 +45,12 @@ function selectSeat(seatId) {
     const totalPriceElement = document.getElementById('totalPrice');
     const totalPrice = totalPriceElement.innerText;
     let totalPriceFloat = parseFloat(totalPrice);
-    totalPriceFloat+=500.00;
-    totalPriceElement.innerText=totalPriceFloat;
+    totalPriceFloat += 550.00;
+    totalPriceElement.innerText = totalPriceFloat;
+    // Grand Price update
+    const grandPriceElement = document.getElementById('grandPrice');
+    grandPriceElement.innerText = totalPriceFloat;
+
 }
 
 // Seat deslection function
@@ -76,4 +80,13 @@ function deSlectSeat(seatId) {
     const romoveRow = document.getElementById(trID);
     seatTableContainer.removeChild(romoveRow);
 
+    // Total Price count & Show
+    const totalPriceElement = document.getElementById('totalPrice');
+    const totalPrice = totalPriceElement.innerText;
+    let totalPriceFloat = parseFloat(totalPrice);
+    totalPriceFloat -= 550.00;
+    totalPriceElement.innerText = totalPriceFloat;
+    // Grand Price update
+    const grandPriceElement = document.getElementById('grandPrice');
+    grandPriceElement.innerText = totalPriceFloat;
 }
