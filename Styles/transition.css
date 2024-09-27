@@ -1,0 +1,42 @@
+.TransitionInBanner{
+    animation:transitionInBanner 1s;
+}
+@keyframes transitionInBanner{
+    from{
+        opacity: 1;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(o);
+    }
+}
+
+.TransitionInCard{
+    animation-delay: 1s;
+    animation:transitionInCard 2s;
+}
+@keyframes transitionInCard{
+    from{
+        opacity: 1;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(o);
+    }
+}
+
+/* Scrol animitation */
+window.addEventListener('scroll', ()=> {
+        const elements=document.querySelectorAll('.fade-in');
+
+        elements.forEach((element)=> {
+                const {top}=element.getBoundingClientRect();
+                const windowHeight=window.innerHeight;
+
+                if (top < windowHeight) {
+                    element.classList.add('visible');
+                }
+            });
+    });

@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="Styles/style.css">
     <!-- Tailwind & DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="Styles/transition.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="min-h-screen">
+<body class="min-h-screen transition-all">
     <div id="fullBody">
         <!-- Header Section -->
         <header class="lg:px-7 lg:pt-5 px-3 py-2">
@@ -55,7 +56,7 @@
             <!-- Banner Section -->
              <Section class="text-center relative">
                 <div
-                    class="bg-[url(images/banner.png)] bg-no-repeat mx-auto items-center content-center bg-cover bg-center rounded-3xl  text-center container lg:h-[720px] lg:relative p-5 lg:p-32 m-2">
+                    class="bg-[url(images/banner.png)] bg-no-repeat mx-auto items-center content-center bg-cover bg-center rounded-3xl  text-center container lg:h-[720px] lg:relative p-5 lg:p-32 m-2 ease-in duration-500 TransitionInBanner">
                     <h1 class="font-raleway font-extrabold text-white lg:text-6xl text-lg lg:mb-12 mb-1">End-to-End
                         Travel with
                         <br><span class="text-[#1DD100] lg:mb-12 mb-4">P Paribahan</span>
@@ -66,16 +67,16 @@
                         secure, and
                         hassle-free travel experience with just a few clicks!</p>
                     <button
-                        class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#1DD100] font-bold font-raleway lg:text-xl text-sm border-none">
+                        class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#1DD100] font-bold font-raleway lg:text-xl text-sm border-none hover:scale-110 duration-500">
                         <a href="#buy">Buy
                             Tickets</a></button>
 
                 </div>
                 <!-- User, Sold, Partner -->
                 <div
-                    class="lg:flex-row lg:absolute flex flex-col lg:-bottom-14 lg:left-72 gap-5 lg:gap-12 lg:mt-0 mt-10 w-auto ">
+                    class="lg:flex-row lg:absolute flex flex-col lg:-bottom-14 lg:left-72 gap-5 lg:gap-12 lg:mt-0 mt-10 w-auto TransitionInCard">
                     <!-- user -->
-                    <div class="card bg-base-100 lg:w-96 w-full shadow-xl border-[#1DD100] border-b-2 ">
+                    <div class="card bg-base-100 lg:w-96 w-full shadow-xl border-[#1DD100] border-b-2">
                         <div class="card-body flex flex-row justify-around">
                             <div>
                                 <img src="images/people.png" alt="" srcset="">
@@ -235,7 +236,7 @@
 
             <!-- Select your seat -->
             <div id="buy"
-                class="flex gap-0 lg:gap-3 lg:flex-row flex-col mx-auto items-start justify-between lg:w-3/5 w-auto bg-white rounded-3xl lg:p-24 p-5">
+                class="flex gap-0 lg:gap-3 lg:flex-row flex-col mx-auto items-center justify-between lg:w-3/5 w-auto bg-white rounded-3xl lg:p-24 p-5">
                 <!-- Left side -->
                 <div>
                     <h1 class="font-raleway font-semibold text-2xl dash-line">Select Your Seat</h1>
@@ -250,7 +251,7 @@
                     </div>
                     <div class="flex gap-2 lg:gap-4 justify-center">
                         <div class="">
-                            <ul class="flex flex-col">
+                            <ul class="flex flex-col lg:mr-0 mr-2">
                                 <li class="lg:py-4 py-2 lg:my-3 my-3">A</li>
                                 <li class="lg:py-4 py-2 lg:my-3 my-3">B</li>
                                 <li class="lg:py-4 py-2 lg:my-3 my-3">C</li>
@@ -264,7 +265,7 @@
                             </ul>
                         </div>
                         <div class="flex lg:gap-12 gap-5">
-                            <div class="flex lg:gap-5 gap-2">
+                            <div class="flex lg:gap-5 gap-1">
                                 <div>
                                     <ul>
                                         <li><button onclick="seatSelection('A1')" id="A1"
@@ -334,7 +335,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="flex lg:gap-5 gap-2">
+                            <div class="flex lg:gap-5 gap-1">
                                 <div>
                                     <ul>
                                         <li><button onclick="seatSelection('A3')" id="A3"
@@ -465,7 +466,7 @@
                         </div>
                         <!-- Next Button -->
                         <button type="submit" id="ButtonNext"
-                            class="btn z-10 w-full lg:h-8 font-inter text-white font-normal bg-[#1DD100] lg:my-7">Next</button>
+                            class="btn z-10 w-full lg:h-8 font-inter text-white font-normal bg-[#1DD100] lg:my-7 hover:bg-lime-600">Next</button>
                     </form>
                     <!-- Terms and Conditions -->
                     <div class="flex justify-around">

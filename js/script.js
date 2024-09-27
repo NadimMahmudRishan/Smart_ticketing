@@ -98,3 +98,5 @@ function BackToHome() {
     const bodyContainer = document.getElementById('fullBody');
     bodyContainer.classList.remove('hidden');
 }
+
+// Amimimaction
