@@ -16,7 +16,7 @@
 <body class="min-h-screen">
     <div id="fullBody">
         <!-- Header Section -->
-        <header class="px-7 pt-5">
+        <header class="lg:px-7 lg:pt-5 px-3 py-2">
             <!-- Nav Section -->
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -75,7 +75,7 @@
                 </div>
                 <!-- User, Sold, Partner -->
                 <div
-                    class="lg:flex-row lg:absolute flex flex-col lg:-bottom-14 lg:left-72 gap-5 lg:gap-12 lg:mt-0 mt-10 w-auto">
+                    class="lg:flex-row lg:absolute flex flex-col lg:-bottom-14 lg:left-72 gap-5 lg:gap-12 lg:mt-0 mt-10 w-auto ">
                     <!-- user -->
                     <div class="card bg-base-100 lg:w-96 w-full shadow-xl border-[#1DD100] border-b-2 ">
                         <div class="card-body flex flex-row justify-around">
@@ -115,7 +115,7 @@
                 </div>
             </Section>
             <!-- Best offer Section -->
-            <section class=" lg:mt-40 container mx-auto">
+            <section class=" lg:mt-40 container mx-auto hidden">
                 <h1 class="text-[#030712] font-raleway font-bold lg:text-5xl text-4xl lg:mt-0 mt-7 text-center">Best
                     offers for you</h1>
                 <div class="flex lg:flex-row flex-col justify-between my-12 lg:gap-0 gap-5">
@@ -162,10 +162,9 @@
 
             </section>
         </header>
-
         <!-- Body Section -->
 
-        <main class="bg-[#F7F8F8] rounded-t-[90px] border-t-2 border-[#1DD100] pb-14">
+        <main class="bg-[#F7F8F8] rounded-t-[90px] border-t-2 border-[#1DD100] pb-14 hidden">
             <!-- P.H Paribahan Section -->
             <section class="text-center mt-20 h-44">
                 <h1 class="text-black font-raleway font-bold lg:text-5xl text-4xl ">P.H Paribahan</h1>
@@ -479,7 +478,7 @@
             </div>
         </main>
         <!-- Footer Section -->
-        <footer class="bg-[#030712] w-full flex justify-around py-20">
+        <footer class="bg-[#030712] w-full flex justify-around py-20 hidden">
             <div class="w-3/5 flex flex-col justify-center mx-auto">
                 <div class="flex justify-between dash-line-footer pb-7 gap-6">
                     <div class="flex flex-col gap-5">
